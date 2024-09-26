@@ -6,6 +6,7 @@ endif
 
 # crDroid System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.matrixx.maintainer=$(STARK_MAINTAINER) \
     ro.crdroid.build.version=$(LINEAGE_VERSION) \
     ro.crdroid.display.version=$(LINEAGE_DISPLAY_VERSION) \
     ro.crdroid.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
