@@ -11,7 +11,6 @@ else
   STARK_BUILD_VARIANT := Vanilla
 endif
 ifeq ($(STARK_BUILD_TYPE), Official)
--include vendor/lineage-priv/keys/keys.mk
   OFFICIAL_DEVICES = $(shell cat vendor/lineage/stark.devices)
   FOUND_DEVICE =  $(filter $(LINEAGE_BUILD), $(OFFICIAL_DEVICES))
     ifeq ($(FOUND_DEVICE),$(LINEAGE_BUILD))
